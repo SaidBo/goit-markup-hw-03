@@ -9,6 +9,28 @@
   --black-color: #000000;
 }
 
+button {
+  cursor: pointer;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+address {
+  font-style: normal;
+}
+
 .page {
   background-color: var(--background-color);
   color: var(--primary-text-color);
@@ -89,8 +111,12 @@
 
 /* Герой */
 
-.hero-title {
+.hero-content {
   background-color: var(--background-color-hero-footer);
+}
+
+.hero-title {
+  /* background-color: var(--background-color-hero-footer); */
   color: var(--white-color);
 
   font-weight: 900;
@@ -109,7 +135,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* benefits */
