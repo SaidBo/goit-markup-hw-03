@@ -1,0 +1,252 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --background-color: #ffffff;
+  --background-color-hero-footer: #2f303a;
+  --bg-btn-color: #f5f4fa;
+  --black-color: #000000;
+}
+
+.page {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+
+  outline: 2px solid tomato;
+}
+
+/* logo */
+.logo {
+  color: var(--accent-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.accent {
+  color: var(--black-color);
+}
+.accent-footer {
+  color: var(--background-color);
+}
+
+/* Page header */
+
+.page-header {
+  background-color: var(--background-color);
+}
+
+/* site-nav */
+.list {
+  list-style: none;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.contact .link {
+  color: var(--primary-text-color);
+
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-color);
+}
+
+/* Герой */
+
+.hero-title {
+  background-color: var(--background-color-hero-footer);
+  color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* section */
+.section-title {
+  color: var(--title-text-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+/* benefits */
+
+.benefits .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.benefits .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* our team */
+.team {
+  background-color: var(--bg-btn-color);
+}
+.team .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team .text {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* footer */
+.footer {
+  background-color: var(--background-color-hero-footer);
+}
+
+.adress-link {
+  color: var(--white-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.adress .link {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.adress-link:hover,
+.adress-link:focus {
+  color: var(--accent-color);
+}
+
+.adress .link:hover,
+.adress .link:hover {
+  color: var(--accent-color);
+}
+
+/* works */
+
+.title-works {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.text-works {
+  color: var(--primary-text-color);
+
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.works .link {
+  text-decoration: none;
+}
+
+/* button */
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  color: var(--title-text-color);
+  background-color: var(--bg-btn-color);
+
+  font-family: inherit;
+}
+
+.button.primary {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.button.hero {
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.button.hero:hover,
+.button.hero:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
