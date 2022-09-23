@@ -111,13 +111,18 @@ address {
 
 /* Герой */
 
-.hero-content {
+.hero {
   background-color: var(--background-color-hero-footer);
 }
 
+.hero-content {
+  text-align: center;
+}
+
 .hero-title {
-  /* background-color: var(--background-color-hero-footer); */
   color: var(--white-color);
+
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -259,6 +264,9 @@ address {
 
 .button.hero {
   padding: 10px 32px;
+  min-width: 216px;
+  border: 1px solid transparent;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
