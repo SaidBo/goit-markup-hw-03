@@ -121,8 +121,10 @@ address {
 
 .hero-title {
   color: var(--white-color);
-
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
+  width: 696px;
 
   font-weight: 900;
   font-size: 44px;
@@ -133,7 +135,15 @@ address {
 }
 
 /* section */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
   font-family: "Roboto";
   font-style: normal;
@@ -147,6 +157,9 @@ address {
 
 .benefits .title {
   color: var(--title-text-color);
+
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -168,6 +181,10 @@ address {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.section.work {
+  padding-top: 0;
 }
 
 /* our team */
@@ -248,6 +265,7 @@ address {
 .button {
   display: inline-block;
   border-radius: 4px;
+  border: transparent;
   color: var(--title-text-color);
   background-color: var(--bg-btn-color);
 
@@ -265,7 +283,6 @@ address {
 .button.hero {
   padding: 10px 32px;
   min-width: 216px;
-  border: 1px solid transparent;
 
   font-weight: 700;
   font-size: 16px;
