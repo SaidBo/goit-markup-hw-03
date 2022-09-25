@@ -21,26 +21,30 @@
   <body class="page">
     <!-- Шапка сайта -->
     <header class="page-header">
-      <div class="container">
-        <nav>
+      <div class="container main-nav">
+        <nav class="main-nav">
           <a href="./index.html" class="logo"
             >Web<span class="accent">Studio</span></a
           >
 
           <ul class="site-nav list">
-            <li><a href="" class="link current">Студія</a></li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="" class="link">Контакти</a></li>
+            <li class="item"><a href="" class="link current">Студія</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакти</a></li>
           </ul>
         </nav>
 
         <ul class="contact list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="link"
               >info@devstudio.com</a
             >
           </li>
-          <li><a href="tel:+380961111111" class="link">+380961111111</a></li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link">+380961111111</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -62,27 +66,27 @@
           <h2 class="section-title visually-hidden">Наші переваги</h2>
 
           <ul class="benefits list">
-            <li>
+            <li class="item>
               <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li>
+            <li class="item>
               <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="item>
               <h3 class="title">ПЛАНУВАННЯ</h3>
               <p class="text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="item>
               <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -138,8 +142,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="title">Ігор Дем'яненко</h3>
-              <p class="text">Product Designer</p>
+              <div class="teams">
+                <h3 class="title">Ігор Дем'яненко</h3>
+                <p class="text">Product Designer</p>
+              </div>
             </li>
             <li>
               <img
@@ -148,8 +154,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="title">Ольга Рєпіна</h3>
-              <p class="text">Frontend Developer</p>
+              <div class="teams">
+                <h3 class="title">Ольга Рєпіна</h3>
+                <p class="text">Frontend Developer</p>
+              </div>
             </li>
             <li>
               <img
@@ -158,8 +166,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="title">Микола Тарасов</h3>
-              <p class="text">Marketing</p>
+              <div class="teams">
+                <h3 class="title">Микола Тарасов</h3>
+                <p class="text">Marketing</p>
+              </div>
             </li>
             <li>
               <img
@@ -168,8 +178,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="title">Михайло Єрмаков</h3>
-              <p class="text">UI Designer</p>
+              <div class="teams">
+                <h3 class="title">Михайло Єрмаков</h3>
+                <p class="text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -192,7 +204,7 @@
                 rel="noopener noreferrer"
                 class="adress-link"
               >
-                м. Київ, Бульвар Лесі Українки, б. 26, 4й поверх офіс 427
+                м. Київ, Бульвар Лесі Українки, б. 26
               </a>
             </li>
 

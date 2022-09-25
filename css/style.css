@@ -31,6 +31,12 @@ address {
   font-style: normal;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .page {
   background-color: var(--background-color);
   color: var(--primary-text-color);
@@ -70,12 +76,45 @@ address {
   background-color: var(--background-color);
 }
 
+/* Logo */
+
+/* .logo {
+  margin-right: 50px;
+} */
+
 /* site-nav */
+
+.container.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 50px;
+}
+
+/* .site-nav .item:not(:last-child) {
+  margin-right: 50px;
+} */
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
 .list {
   list-style: none;
 }
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -91,6 +130,14 @@ address {
 }
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+.contact {
+  display: flex;
+}
+
+.contact .item + .item {
+  margin-left: 50px;
 }
 
 .contact .link {
@@ -150,10 +197,18 @@ address {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  /* text-align: center; */
+  text-align: center;
 }
 
 /* benefits */
+
+.benefits {
+  display: flex;
+}
+
+.benefits .item {
+  width: 270px;
+}
 
 .benefits .title {
   color: var(--title-text-color);
@@ -183,6 +238,8 @@ address {
   margin: -1px;
 }
 
+/* our work */
+
 .section.work {
   padding-top: 0;
 }
@@ -192,6 +249,8 @@ address {
   background-color: var(--bg-btn-color);
 }
 .team .title {
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -203,7 +262,12 @@ address {
   line-height: 1.19;
 }
 
+.teams {
+  padding: 30px 70px;
+}
+
 /* footer */
+
 .footer {
   background-color: var(--background-color-hero-footer);
 }
@@ -240,6 +304,12 @@ address {
 
 /* works */
 
+.card {
+  padding: 20px 24px;
+  max-width: 370px;
+  border: 1px solid rgba(238, 238, 238, 1);
+}
+
 .title-works {
   color: var(--title-text-color);
 
@@ -258,6 +328,11 @@ address {
 
 .works .link {
   text-decoration: none;
+}
+
+.text-decoration {
+  max-width: 322px;
+  padding: 20px 24px;
 }
 
 /* button */
