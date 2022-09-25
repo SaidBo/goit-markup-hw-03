@@ -96,7 +96,7 @@ img {
 
 .site-nav {
   display: flex;
-  margin-left: 50px;
+  margin-left: 93px;
 }
 
 /* .site-nav .item:not(:last-child) {
@@ -134,6 +134,10 @@ img {
 
 .contact {
   display: flex;
+}
+
+.contact.list {
+  margin-left: auto;
 }
 
 .contact .item + .item {
@@ -210,6 +214,10 @@ img {
   width: 270px;
 }
 
+.benefits .item + .item {
+  margin-left: 30px;
+}
+
 .benefits .title {
   color: var(--title-text-color);
 
@@ -244,10 +252,32 @@ img {
   padding-top: 0;
 }
 
+.work {
+  display: flex;
+  gap: 30px;
+}
+
+/* .work .item + .item {
+  margin-left: 30px;
+} */
+
 /* our team */
 .team {
   background-color: var(--bg-btn-color);
 }
+
+.team-items.list {
+  display: flex;
+}
+
+.team-items .item + .item {
+  margin-left: 30px;
+}
+
+.team-items .item {
+  max-width: 270px;
+}
+
 .team .title {
   margin-bottom: 10px;
 
@@ -263,7 +293,11 @@ img {
 }
 
 .teams {
-  padding: 30px 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: var(--background-color);
+  text-align: center;
 }
 
 /* footer */
@@ -272,7 +306,20 @@ img {
   background-color: var(--background-color-hero-footer);
 }
 
+.footer .logo {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.adress .item {
+  min-width: 231px;
+}
+
 .adress-link {
+  display: block;
+  margin-bottom: 9px;
+
   color: var(--white-color);
 
   font-style: normal;
@@ -283,6 +330,9 @@ img {
 }
 
 .adress .link {
+  display: block;
+  margin-bottom: 9px;
+
   color: rgba(255, 255, 255, 0.6);
 
   font-style: normal;
@@ -290,6 +340,10 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+
+.adress .link:last-child {
+  margin-bottom: 0;
 }
 
 .adress-link:hover,
@@ -302,7 +356,26 @@ img {
   color: var(--accent-color);
 }
 
+/* button works */
+
+.button-list {
+  display: flex;
+  width: 575px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.button-list .item + .item {
+  margin-left: 8px;
+}
+
 /* works */
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .card {
   padding: 20px 24px;
