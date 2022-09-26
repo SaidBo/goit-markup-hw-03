@@ -7,6 +7,8 @@
   --background-color-hero-footer: #2f303a;
   --bg-btn-color: #f5f4fa;
   --black-color: #000000;
+  --border-color: #eeeeee;
+  --adress-text-color: #ffffff99;
 }
 
 button {
@@ -46,14 +48,17 @@ img {
 }
 
 .container {
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* logo */
+
 .logo {
   color: var(--accent-color);
 
@@ -83,6 +88,10 @@ img {
 } */
 
 /* site-nav */
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
 
 .container.main-nav {
   display: flex;
@@ -307,18 +316,23 @@ img {
 }
 
 .footer .logo {
+  width: 231px;
   display: block;
   padding-top: 60px;
   padding-bottom: 20px;
 }
 
 .adress .item {
-  min-width: 231px;
+  width: 231px;
+  margin-bottom: 9px;
+}
+
+.adress .item:last-child {
+  margin-bottom: 0;
 }
 
 .adress-link {
   display: block;
-  margin-bottom: 9px;
 
   color: var(--white-color);
 
@@ -331,19 +345,14 @@ img {
 
 .adress .link {
   display: block;
-  margin-bottom: 9px;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--adress-text-color);
 
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-}
-
-.adress .link:last-child {
-  margin-bottom: 0;
 }
 
 .adress-link:hover,
@@ -377,10 +386,43 @@ img {
   flex-wrap: wrap;
 }
 
+.item-card {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.item-card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.item-card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.item-card:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+/* .item-card {
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  max-width: 370px;
+}
+
+.item-card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.item-card:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+} */
+
 .card {
   padding: 20px 24px;
   max-width: 370px;
-  border: 1px solid rgba(238, 238, 238, 1);
+  border: 1px solid var(--border-color);
 }
 
 .title-works {
