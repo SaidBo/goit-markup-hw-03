@@ -173,6 +173,8 @@ img {
 
 .hero {
   background-color: var(--background-color-hero-footer);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-content {
@@ -257,18 +259,19 @@ img {
 
 /* our work */
 
-.section.work {
+.work-section {
   padding-top: 0;
+  padding-bottom: 94px;
+}
+
+.work .item {
+  width: 370px;
 }
 
 .work {
   display: flex;
   gap: 30px;
 }
-
-/* .work .item + .item {
-  margin-left: 30px;
-} */
 
 /* our team */
 .team {
@@ -312,14 +315,15 @@ img {
 /* footer */
 
 .footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
   background-color: var(--background-color-hero-footer);
 }
 
 .footer .logo {
-  width: 231px;
   display: block;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .adress .item {
@@ -423,9 +427,12 @@ img {
   padding: 20px 24px;
   max-width: 370px;
   border: 1px solid var(--border-color);
+  border-top: none;
 }
 
 .title-works {
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -474,6 +481,9 @@ img {
   padding: 10px 32px;
   min-width: 216px;
 
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -483,7 +493,7 @@ img {
 .button.hero:hover,
 .button.hero:focus {
   color: var(--white-color);
-  background-color: var(--accent-color);
+  background-color: #188ce8;
 }
 
 .button.primary:hover,
